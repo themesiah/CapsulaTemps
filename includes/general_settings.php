@@ -16,8 +16,8 @@ if (isset($_SERVER['SERVER_NAME'])) {
             ini_set('memory_limit', '-1');
             date_default_timezone_set('Europe/Madrid');
 
-            define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . '/Proj_CapsulaTemporal/');
-            define('BASE_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/Proj_CapsulaTemporal/');
+            define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . '/Proj_CapsulaTemps/');
+            define('BASE_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/Proj_CapsulaTemps/');
 
             //MySQL Connection
             define('DBSERVER', 'localhost');
@@ -40,8 +40,8 @@ if (isset($_SERVER['SERVER_NAME'])) {
             // ini_set('memory_limit', '-1');
             date_default_timezone_set('Europe/Madrid');
 
-            define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . '/Proj_CapsulaTemporal/');
-            define('BASE_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/Proj_CapsulaTemporal/');
+            define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . '/Proj_CapsulaTemps/');
+            define('BASE_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/Proj_CapsulaTemps/');
 
             //MySQL Connection
             define('DBSERVER', 'localhost');
@@ -61,8 +61,8 @@ if (isset($_SERVER['SERVER_NAME'])) {
     // ini_set('memory_limit', '-1');
     date_default_timezone_set('Europe/Madrid');
 
-    define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . '/Proj_CapsulaTemporal/');
-    define('BASE_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/Proj_CapsulaTemporal/');
+    define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . '/Proj_CapsulaTemps/');
+    define('BASE_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/Proj_CapsulaTemps/');
 
     //MySQL Connection
     define('DBSERVER', 'localhost');

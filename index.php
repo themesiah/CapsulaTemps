@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proj_CapsulaTemporal/includes/general_settings.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proj_CapsulaTemps/includes/general_settings.php';
 
 //authorization();
 $langs = array('es');
@@ -37,7 +37,7 @@ if ((!isset($_GET['lang'])) && !isset($_GET['url'])) {
                 
             } else {
                 //HOME
-                $output_body .= 'echo "CAPSULA CORP".';
+                $output_body .= '';
             }
             break;
     }
