@@ -24,10 +24,11 @@ if ((!isset($_GET['lang'])) && !isset($_GET['url'])) {
     /* INCLUIMOS LOS FICHEROS DE FUNCIONES DE LAS ZONAS ESTÁNDAR DE LA APP */
     require_once BASE_PATH . 'public-functions/css.php';
     require_once BASE_PATH . 'public-functions/js.php';
-
+    require_once BASE_PATH . 'public-functions/nav.php';
     /* CARGAMOS EL CONTENIDO COMUN DE LAS DIFERENTES VARIABLES QUE FORMAN EL CUERPO QUE TIENEN CONTENIDO COMÚN */
     $output_css .= getCss();
     $output_js .= getJs();
+    $output_nav .= getNav();
     
     /* EN FUNCIÓN DE LA SECCIÓN QUE CARGAMOS $url[0] ACTUAMOS */
     switch ($url[0]) {
