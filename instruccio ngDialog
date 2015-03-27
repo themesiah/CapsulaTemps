@@ -1,6 +1,0 @@
-us he pujat la carpeta bower-component ja que conte la llibreria ngDialog per poder monstrar el popup.
-quan tots ho tinguem actualitzat tornem a posar-lo al .gitignore
-
-en principi haurieu de cargar la llibreria karma tambe,
-npm install karma
-npm install grunt-karma
