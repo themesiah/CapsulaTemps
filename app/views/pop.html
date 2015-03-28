@@ -3,6 +3,43 @@
     <p ng-show="theme">Test content for <code>{{theme}}</code></p>
     <p ng-show="ngDialogData.foo">Data passed through: <code>{{ngDialogData.foo}}</code></p>
     <p ng-show="dialogModel.message">Scope passed through: <code>{{dialogModel.message}}</code></p>
+
+    <div id="fb-root"></div>
+
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id))
+                return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/ca_ES/sdk.js#xfbml=1&appId=863112953725798&version=v2.3";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div id="container-pop">
+        <div id="left-pop">
+            <h4>¿No estas registrado?</h4>
+            <span id="signinButton">
+                <span
+                    class="g-signin"
+                    data-callback="signinCallback"
+                    data-clientid="pkS3v3z2PhW02KrpOEVSVElK"
+                    data-cookiepolicy="single_host_origin"
+                    data-requestvisibleactions="http://schemas.google.com/AddActivity"
+                    data-scope="https://www.googleapis.com/auth/plus.login">
+                </span>
+            </span>
+            <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false"></div>
+            <input placeholder="Direccion e-mail" type="email" ng-model="user">
+            <input placeholder="Contraseña" type="password" ng-model="pass">
+            <input placeholder="Repite la contraseña" type="password" ng-model="pass2">
+            <!--            <button ng-click="">Registrar</button> -->
+        </div>
+        <div id="right-pop">
+            <h4>¿Ya tienes cuenta?</h4>
+        </div>   
+    </div>
 </div>
 <div class="ngdialog-buttons">
     <button type="button" class="ngdialog-button ngdialog-button-secondary"
@@ -12,3 +49,15 @@
             ng-dialog-close-previous>Close and open</button>
     <button type="button" class="ngdialog-button ngdialog-button-primary" ng-click="openSecond()">Open next</button>
 </div>
+
+
+<script type="text/javascript">
+    (function () {
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
+        po.src = 'https://apis.google.com/js/client:plusone.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
+    })();
+</script>
