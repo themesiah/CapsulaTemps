@@ -1,0 +1,30 @@
+body { font-family: sans-serif; }
+
+.masonry {
+  background: #EEE;
+  max-width: 100%;
+}
+
+.masonry .item {
+  width:  20%;
+  float: left;
+  background: #888;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.item h1 {
+    text-align: center;
+}
+
+.item img {
+    display: inline;
+    margin: 5%;
+    width: 90%;
+}
+
+button {
+  font-size: 20px;
+}

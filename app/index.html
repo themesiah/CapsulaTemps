@@ -15,11 +15,13 @@
 		<link rel="stylesheet" href="../bower_components/ngDialog/css/ngDialog.css" />
 		<link rel="stylesheet" href="../bower_components/ngDialog/css/ngDialog-theme-default.css" />
 		<link rel="stylesheet" href="../bower_components/ngDialog/css/ngDialog-theme-plain.css" />
+                <link rel="stylesheet" href="styles/masonry.css">
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
     <body ng-controller="MainCtrl" >
+        
         <!--[if lt IE 7]>
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -49,13 +51,20 @@
             </div>
         </div>
 
-        <div class="container">
-            <div ng-view="" ></div>
+        <h1>Añadir cápsulas</h1>
+        <h2>Si no te funciona, haz <b>bower install jquery-masonry</b></h2>
+        <p><button id="prepend-button">Añadir nueva cápsula</button>
+            <input id="capsulaName" placeholder="Nombre cápsula"/>
+            <input id="name" placeholder="Nombre creador"/>
+            <input id="lugar" placeholder="Punto de interés"/>
+        <div class="masonry">
         </div>
-
+        
+        
         <div class="footer">
             <div class="container">
-                <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+                <p>Portal de cápsulas del tiempo</p>
+                <p>&#169 2015</p>
             </div>
         </div>
         
@@ -84,7 +93,7 @@
         <script src="bower_components/angular-touch/angular-touch.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
-		<script src="../bower_components/jquery/dist/jquery.js"></script>
+	<script src="../bower_components/jquery/dist/jquery.js"></script>
         <script src="../bower_components/angular/angular.js"></script>
         <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script src="../bower_components/angular-animate/angular-animate.js"></script>
@@ -93,11 +102,15 @@
         <script src="../bower_components/angular-route/angular-route.js"></script>
         <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
         <script src="../bower_components/angular-touch/angular-touch.js"></script>
-		<script src="../bower_components/ngDialog/js/ngDialog.js"></script>
+	<script src="../bower_components/ngDialog/js/ngDialog.js"></script>
+        
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <!-- endbuild -->
+        <script src="scripts/controllers/mainViewCtrl.js"></script>
+        <script src="../bower_components/jquery-masonry/dist/masonry.pkgd.js"></script>
+        
     </body>
 </html>
